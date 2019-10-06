@@ -40,7 +40,7 @@ Clothes:
 
 
 
-***In this section, we made some brief summary of these papers:***
+***In this section, we made some brief summary of some papers:***
 
 Vedio & Images:
 
