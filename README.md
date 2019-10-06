@@ -16,13 +16,34 @@ Vedio & Images:
 - Chan et al. **[Everybody Dance Now](https://arxiv.org/pdf/1808.07371.pdf)**
 - Karras et al. **[A Style-Based Generator Architecture for Generative Adversarial Networks](https://arxiv.org/abs/1812.04948)**
 - Kim et al. **[Deep video portraits](https://web.stanford.edu/~zollhoef/papers/SG2018_DeepVideo/page.html)**
+- Vondrick et al. **[Generating Videos with Scene Dynamics](http://www.cs.columbia.edu/~vondrick/tinyvideo/paper.pdf)**
+- Klawonn et al. **[Generating Triples with Adversarial Networks for Scene Graph Construction](https://arxiv.org/pdf/1802.02598.pdf)**
+- Thies et al. **[Face2Face: Real-time Face Capture and Reenactment of RGB Videos](http://openaccess.thecvf.com/content_cvpr_2016/papers/Thies_Face2Face_Real-Time_Face_CVPR_2016_paper.pdf)**
+- Shen et al. **[“Deep Fakes” using Generative Adversarial Networks (GAN)](http://noiselab.ucsd.edu/ECE228_2018/Reports/Report16.pdf)**
+- Wang et al. **[Generative Adversarial Networks: A Survey and
+Taxonomy](https://arxiv.org/pdf/1906.01529.pdf)**
 
 Dialogue Response:
 
 - Wu et al. **[Are You Talking to Me? Reasoned Visual Dialog Generation through Adversarial Learning](https://arxiv.org/abs/1711.07613)**
 - Olabiyi et al. **[Multi-turn Dialogue Response Generation in an Adversarial Learning Framework](https://arxiv.org/abs/1805.11752)**
 
+Audio:
+
+- Chandna et al. **[WGANSing: A Multi-Voice Singing Voice Synthesizer Based on the Wasserstein-GAN](https://arxiv.org/pdf/1903.10729.pdf)**
+- Oord et al. **[WAVENET: A GENERATIVE MODEL FOR RAW AUDIO](https://arxiv.org/pdf/1609.03499.pdf)**
+- Vougioukas et al. **[Video-Driven Speech Reconstruction using Generative Adversarial
+Networks](https://arxiv.org/pdf/1906.06301.pdf)**
+
+Clothes:
+- Kubo et al. **[GENERATIVE ADVERSARIAL NETWORK-BASED VIRTUAL TRY-ON WITH CLOTHING REGION](https://openreview.net/pdf?id=B1WLiDJvM)**
+
+
+
 ***In this section, we made some brief summary of these papers:***
+
+Vedio & Images:
+
 - Korshunova et al. **[Fast Face-swap Using Convolutional Neural Networks](http://openaccess.thecvf.com/content_iccv_2017/html/Korshunova_Fast_Face-Swap_Using_ICCV_2017_paper.html)**: This paper comes up with a solution to face swapping problem in terms of style transfer using CNN.The proposed system in this paper has two additional components performing face alignment and background/hair/skin segmentation.  Facial keypoints were extracted using dlib, which are used to align a frontal view reference face.  Segmentation is used to re- store the background and hair of the input image X based on the cloning technique in OpenCV.Its transformation network here is a multiscale architecture with branches operating on different downsampled versions of the input image X, which is based on the architecture of Ulyanov et al.  Each such branch has blocks of zero-padded convo- lutions followed by linear rectification. Branches are combined via nearest-neighbor upsampling by a factor of two and concatenation along the channel axis. The last branch of the network ends with a 1 × 1 convolution and 3 color channels. For every input image X, it aims to generate an X which jointly minimizes the following content and style loss. These losses are defined in the feature space of the normalised version of the 19-layer VGG network. Besides, this paper applies light loss to solve the problem that the lighting conditions of the content image x are not preserved in the generated image.
 
 - Razavi et al. **[Generating Diverse High-Fidelity Images with VQ-VAE-2](https://arxiv.org/abs/1906.00446)**: This paper is based on Vector Quantized Variational AutoEncoder and succeed to scale and enhance its performance. The proposed models combines VQ-VAE and PixelCNN, of which the proposed method follows a two-stage approach: first, it trains a hierarchical VQ-VAE to encode images onto a discrete latent space, and then it fits a powerful PixelCNN prior over the discrete latent space induced by all the data. As opposed to vanilla VQ-VAE, in this work it uses a hierarchy of vector quantized codes to model large images. The main motivation behind this is to model local information, such as texture, separately from global information such as shape and geometry of objects. The prior model over each level can thus be tailored to capture the specific correlations that exist in that level. In order to further compress the image, and to be able to sample from the model learned during stage 1, it learns a prior over the latent codes. Fitting prior distributions using neural networks from training data has become common practice, as it can significantly improve the performance of latent variable models. The fidelity of  best class conditional samples are competitive with the state of the art Generative Adversarial Networks, with broader diversity in several classes, contrasting our method against the known limitations of GANs. 
@@ -45,6 +66,7 @@ The models go back and forth many times until the artificial image is practicall
 - Kim et al. **[Deep video portraits](https://web.stanford.edu/~zollhoef/papers/SG2018_DeepVideo/page.html)**:
 The paper transfers the full 3D head position, head rotation, face expression, eye gaze, and eye blinking from a source actor to a portrait video of a target actor. The core of the approach is a generative neural network with a novel space-time architecture. The network takes as input synthetic renderings of a parametric face model, based on which it predicts photo-realistic video frames for a given target actor. The paper renders a synthetic target video with the reconstructed head animation parameters from a source video, and feed it into the trained network – thus enabling source-to-target video re-animation. 
 
+Dialogue Response:
 
 - Wu et al. **[Are You Talking to Me? Reasoned Visual Dialog Generation through Adversarial Learning](https://arxiv.org/abs/1711.07613)**: This paper comes up with a solution for visual dialog generation. The key challenge in visual dialog is thus maintaining a consistent, and natural dialogue while continuing to answer questions correctly. This paper solve this problem with a novel approach that combines Reinforcement Learning and Generative Adversarial Networks (GANs) to generate more human-like responses to questions. The GAN helps overcome the relative paucity of training data, and the tendency of the typical MLE-based approach to generate overly terse answers.  
 The model is composed of two components, the ﬁrst being a sequential co-attention generator that accepts as input image, question and dialog history tuples, and uses the co-attention encoder to jointly reason over them. The second component is a discriminator tasked with labelling whether each answer has been generated by a human or the generative model by considering the attention weights. The output from the discriminator is used as a reward to push the generator to generate responses that are indistinguishable from those a human might generate.
