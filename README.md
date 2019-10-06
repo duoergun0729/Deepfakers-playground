@@ -76,3 +76,42 @@ The model is composed of two components, the ﬁrst being a sequential co-attent
 Left: The hredGAN architecture - The generator makes predictions conditioned on the dialogue history, hi, attention, aji, noise sample, zji, and ground truth, xj−1 i+1. Right: RNN-based discriminator that discriminates bidirectionally at the word level.  
 ![image](https://github.com/11-785-Deepfakers/Deepfakers-playground/raw/master/images/graph2.png)   
 The HRED generator with local attention-The attention RNN ensures local relevance while the context RNN ensures global relevance. Their states are combined to initialize the decoder RNN and the discriminator BiRNN.
+
+
+# Papers and software in detecting DeepFakes
+
+Here are some papers we found in detecting DeepFakes, other group from defenders' side could add their work below.
+
+***Content***
+
+Dataset:
+- **[FaceForensics++: Learning to Detect Manipulated Facial Images](https://arxiv.org/pdf/1901.08971.pdf)**
+
+Detecting Method:
+- **[Xception](https://arxiv.org/pdf/1901.08971.pdf)**
+
+- **[MesoNet: a Compact Facial Video Forgery Detection Network](https://arxiv.org/pdf/1809.00888.pdf)**
+
+- **[A Deep Learning Approach to Universal Image Manipulation Detection Using a New Convolutional Layer](https://dl.acm.org/citation.cfm?id=2930786)
+
+- **[Distinguishing Computer Graphics from Natural Images Using Convolution Neural Networks](http://www-igm.univ-mlv.fr/~vnozick/publications/Rahmouni_WIFS_2017/Rahmouni_WIFS_2017.pdf)**
+
+- **[Recasting Residual-based Local Descriptors as Convolutional Neural Networks: an Application to Image Forgery Detection](https://arxiv.org/pdf/1703.04615.pdf)**
+
+- **[Rich Models for Steganalysis of Digital Images](https://ieeexplore.ieee.org/document/6197267)**
+
+- **[Deep Learning for Deepfakes Creation and Detection](https://arxiv.org/abs/1909.11573)**
+
+- **[Hybrid LSTM and Encoder–Decoder Architecture for Detection of Image Forgeries](https://ieeexplore.ieee.org/document/8626149)**
+
+- **[Recurrent Convolutional Strategies for Face Manipulation Detection in Videos](https://arxiv.org/abs/1905.00582)**
+
+- **[Detecting GAN generated Fake Images using Co-occurrence Matrices](https://arxiv.org/abs/1903.06836)**
+
+- **[Exposing DeepFake Videos By Detecting Face Warping Artifacts](https://arxiv.org/abs/1811.00656)**
+
+- **[Protecting World Leaders Against Deep Fakes](http://openaccess.thecvf.com/content_CVPRW_2019/papers/Media%20Forensics/Agarwal_Protecting_World_Leaders_Against_Deep_Fakes_CVPRW_2019_paper.pdf)**
+
+Software:
+
+- **[DeepTrace](https://deeptracelabs.com/)**
