@@ -88,8 +88,9 @@ Dataset:
 - **[FaceForensics++: Learning to Detect Manipulated Facial Images](https://arxiv.org/pdf/1901.08971.pdf)**
 
 Detecting Method:
-- **[Xception](https://arxiv.org/pdf/1901.08971.pdf)**
-
+- **[Xception](https://arxiv.org/abs/1610.02357)**
+  - In paper [FaceForensics++: Learning to Detect Manipulated Facial Images], they use Xception to perform a detection task.
+  
 - **[MesoNet: a Compact Facial Video Forgery Detection Network](https://arxiv.org/pdf/1809.00888.pdf)**
 
 - **[A Deep Learning Approach to Universal Image Manipulation Detection Using a New Convolutional Layer](https://dl.acm.org/citation.cfm?id=2930786)**
