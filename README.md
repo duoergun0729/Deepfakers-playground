@@ -92,7 +92,7 @@ Detecting Method:
 
 - **[MesoNet: a Compact Facial Video Forgery Detection Network](https://arxiv.org/pdf/1809.00888.pdf)**
 
-- **[A Deep Learning Approach to Universal Image Manipulation Detection Using a New Convolutional Layer](https://dl.acm.org/citation.cfm?id=2930786)
+- **[A Deep Learning Approach to Universal Image Manipulation Detection Using a New Convolutional Layer](https://dl.acm.org/citation.cfm?id=2930786)**
 
 - **[Distinguishing Computer Graphics from Natural Images Using Convolution Neural Networks](http://www-igm.univ-mlv.fr/~vnozick/publications/Rahmouni_WIFS_2017/Rahmouni_WIFS_2017.pdf)**
 
