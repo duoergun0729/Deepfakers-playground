@@ -112,6 +112,18 @@ Detecting Method:
 
 - **[Protecting World Leaders Against Deep Fakes](http://openaccess.thecvf.com/content_CVPRW_2019/papers/Media%20Forensics/Agarwal_Protecting_World_Leaders_Against_Deep_Fakes_CVPRW_2019_paper.pdf)**
 
+- **[Exposing deep fakes using inconsistent head poses](https://arxiv.org/pdf/1811.00661.pdf)**
+
+- **[Exploiting visual artifacts to expose deepfakes and face manipulations](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8638330)**
+
+- **[Capsule-forensics: Using capsule networks to detect forged images and videos](https://arxiv.org/pdf/1810.11215.pdf)**
+
+- **[Deep learning based computer generated face identification using convolutional neural network citation](https://pdfs.semanticscholar.org/4507/ff506f56305b831d56dc90775b762ac58dc0.pdf)**
+
+- **[Deep Learning for Deepfakes Creation and Detection](https://arxiv.org/pdf/1909.11573.pdf)**
+
+- **[Recurrent-Convolution Approach to DeepFake Detection-State-Of-Art Results on FaceForensics++](https://arxiv.org/pdf/1905.00582.pdf)**
+
 Software:
 
 - **[DeepTrace](https://deeptracelabs.com/)**
