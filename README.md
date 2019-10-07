@@ -78,9 +78,6 @@ Left: The hredGAN architecture - The generator makes predictions conditioned on 
 ![image](https://github.com/11-785-Deepfakers/Deepfakers-playground/raw/master/images/graph2.png)   
 The HRED generator with local attention-The attention RNN ensures local relevance while the context RNN ensures global relevance. Their states are combined to initialize the decoder RNN and the discriminator BiRNN.
 
-
-# Papers and software in detecting DeepFakes
-
 ## Detection:
 Here are some papers we found in detecting DeepFakes, other group from defenders' side could add their work below.
 
