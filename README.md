@@ -1,5 +1,6 @@
-# Papers, tools and data that used in Generating Deepfakes
+# Papers, tools and data that used in Generating and Detecting Deepfakes
 
+## Generation:
 For the convenience of reading and searching, the following is a list of papers about Deepfakes generation. The content might  be updated from time to time.
 
 ***Content***
@@ -116,3 +117,6 @@ Detecting Method:
 Software:
 
 - **[DeepTrace](https://deeptracelabs.com/)**
+
+
+## Detection:
