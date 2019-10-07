@@ -81,6 +81,7 @@ The HRED generator with local attention-The attention RNN ensures local relevanc
 
 # Papers and software in detecting DeepFakes
 
+## Detection:
 Here are some papers we found in detecting DeepFakes, other group from defenders' side could add their work below.
 
 ***Content***
@@ -117,6 +118,3 @@ Detecting Method:
 Software:
 
 - **[DeepTrace](https://deeptracelabs.com/)**
-
-
-## Detection:
