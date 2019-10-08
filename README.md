@@ -86,6 +86,8 @@ Here are some papers we found in detecting DeepFakes, other group from defenders
 Dataset:
 - **[FaceForensics++: Learning to Detect Manipulated Facial Images](https://arxiv.org/pdf/1901.08971.pdf)**
 
+- **[Kaggle: Real and Fake Face Detection](https://www.kaggle.com/ciplab/real-and-fake-face-detection)**
+
 Detecting Method:
 - **[Xception](https://arxiv.org/abs/1610.02357)**
   - In paper [FaceForensics++: Learning to Detect Manipulated Facial Images], they use Xception to perform a detection task.
