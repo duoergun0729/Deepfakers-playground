@@ -43,7 +43,7 @@ Clothes:
 
 ***In this section, we made some brief summary of some papers:***
 
-Vedio & Images:
+Video & Images:
 
 - Korshunova et al. **[Fast Face-swap Using Convolutional Neural Networks](http://openaccess.thecvf.com/content_iccv_2017/html/Korshunova_Fast_Face-Swap_Using_ICCV_2017_paper.html)**: This paper comes up with a solution to face swapping problem in terms of style transfer using CNN.The proposed system in this paper has two additional components performing face alignment and background/hair/skin segmentation.  Facial keypoints were extracted using dlib, which are used to align a frontal view reference face.  Segmentation is used to re- store the background and hair of the input image X based on the cloning technique in OpenCV.Its transformation network here is a multiscale architecture with branches operating on different downsampled versions of the input image X, which is based on the architecture of Ulyanov et al.  Each such branch has blocks of zero-padded convo- lutions followed by linear rectification. Branches are combined via nearest-neighbor upsampling by a factor of two and concatenation along the channel axis. The last branch of the network ends with a 1 × 1 convolution and 3 color channels. For every input image X, it aims to generate an X which jointly minimizes the following content and style loss. These losses are defined in the feature space of the normalised version of the 19-layer VGG network. Besides, this paper applies light loss to solve the problem that the lighting conditions of the content image x are not preserved in the generated image.
 
@@ -80,6 +80,8 @@ The HRED generator with local attention-The attention RNN ensures local relevanc
 
 ## Detection:
 Here are some papers we found in detecting DeepFakes, other group from defenders' side could add their work below.
+
+- Cai et al. **[The DKU Replay Detection System for the ASVspoof 2019 Challenge: On Data Augmentation, Feature Representation, Classification, and Fusion](https://arxiv.org/pdf/1907.02663.pdf)**: This paper details the efforts of one research group participating in the ASVSpoof 2019 challenge, which is a competition aimed at defending against audio spoofing attacks in automatic speaker verification (ASV) tasks. Attacks typically come from systems which pretend to impersonate a speaker by using text-to-speech synthesis or voice conversion. For this competition, the dataset is comprised of voice samples, which are processed into group delay (GD) grams and fed into the recognition system, which classifies the input as either legitimate or fake. The research group used a variety of deep learning models, including a system based on ResNet, to achieve an Equal Error Rate (EER) of 0.66%.
 
 ***Content***
 
