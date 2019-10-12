@@ -5,7 +5,7 @@ For the convenience of reading and searching, the following is a list of papers 
 
 ***Content***
 
-Vedio & Images:
+Video & Images:
 
 - Korshunova et al. **[Fast Face-swap Using Convolutional Neural Networks](http://openaccess.thecvf.com/content_iccv_2017/html/Korshunova_Fast_Face-Swap_Using_ICCV_2017_paper.html)**
 - Razavi et al. **[Generating Diverse High-Fidelity Images with VQ-VAE-2](https://arxiv.org/abs/1906.00446)**
@@ -81,7 +81,14 @@ The HRED generator with local attention-The attention RNN ensures local relevanc
 ## Detection:
 Here are some papers we found in detecting DeepFakes, other group from defenders' side could add their work below.
 
-- Cai et al. **[The DKU Replay Detection System for the ASVspoof 2019 Challenge: On Data Augmentation, Feature Representation, Classification, and Fusion](https://arxiv.org/pdf/1907.02663.pdf)**: This paper details the efforts of one research group participating in the ASVSpoof 2019 challenge, which is a competition aimed at defending against audio spoofing attacks in automatic speaker verification (ASV) tasks. Attacks typically come from systems which pretend to impersonate a speaker by using text-to-speech synthesis or voice conversion. For this competition, the dataset is comprised of voice samples, which are processed into group delay (GD) grams and fed into the recognition system, which classifies the input as either legitimate or fake. The research group used a variety of deep learning models, including a system based on ResNet, to achieve an Equal Error Rate (EER) of 0.66%.
+#### **Theboys**, *Detector group*
+Focus: audio
+
+This paper details the efforts of one research group participating in the ASVSpoof 2019 challenge, which is a competition aimed at defending against audio spoofing attacks in automatic speaker verification (ASV) tasks. Attacks typically come from systems which pretend to impersonate a speaker by using text-to-speech synthesis or voice conversion. For this competition, the dataset is comprised of voice samples, which are processed into group delay (GD) grams and fed into the recognition system, which classifies the input as either legitimate or fake. The research group used a variety of deep learning models, including a system based on ResNet, to achieve an Equal Error Rate (EER) of 0.66%<sup>1</sup>.
+
+#### **References**
+
+\[1\] Cai, W., Wu, H., Cai, D., & Li, M. (2019). [The DKU Replay Detection System for the ASVspoof 2019 Challenge: On Data Augmentation, Feature Representation, Classification, and Fusion](https://arxiv.org/pdf/1907.02663.pdf). arXiv preprint arXiv:1907.02663.
 
 ***Content***
 
