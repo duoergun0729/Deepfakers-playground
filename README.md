@@ -23,6 +23,11 @@ Video & Images:
 - Shen et al. **[“Deep Fakes” using Generative Adversarial Networks (GAN)](http://noiselab.ucsd.edu/ECE228_2018/Reports/Report16.pdf)**
 - Wang et al. **[Generative Adversarial Networks: A Survey and
 Taxonomy](https://arxiv.org/pdf/1906.01529.pdf)**
+- Li et al. **[Exposing DeepFake Videos By Detecting Face Wraping Artifacts](http://openaccess.thecvf.com/content_CVPRW_2019/papers/Media%20Forensics/Li_Exposing_DeepFake_Videos_By_Detecting_Face_Warping_Artifacts_CVPRW_2019_paper.pdf)**
+- Guera et al. **[Deepfake Video Detection Using Recurrent Neural Networks](https://engineering.purdue.edu/~dgueraco/content/deepfake.pdf)**
+
+
+
 
 Dialogue Response:
 
@@ -66,6 +71,22 @@ The models go back and forth many times until the artificial image is practicall
 
 - Kim et al. **[Deep video portraits](https://web.stanford.edu/~zollhoef/papers/SG2018_DeepVideo/page.html)**:
 The paper transfers the full 3D head position, head rotation, face expression, eye gaze, and eye blinking from a source actor to a portrait video of a target actor. The core of the approach is a generative neural network with a novel space-time architecture. The network takes as input synthetic renderings of a parametric face model, based on which it predicts photo-realistic video frames for a given target actor. The paper renders a synthetic target video with the reconstructed head animation parameters from a source video, and feed it into the trained network – thus enabling source-to-target video re-animation. 
+
+- Li et al. **[Exposing DeepFake Videos By Detecting Face Wraping Artifacts](http://openaccess.thecvf.com/content_CVPRW_2019/papers/Media%20Forensics/Li_Exposing_DeepFake_Videos_By_Detecting_Face_Warping_Artifacts_CVPRW_2019_paper.pdf)**:
+The paper detects synthesized videos by exploiting the face wraping artifacts resulted from the DeepFake production pipeline. They use the fact that current DeepFake algorithms first generate a fixed size face image, and then undergoes an affine transform to fit the pose and size of the target face which generates resolution inconsistency surrounding the facial region. The paper trains four CNN models - VGG16, ResNet50, ResNet101, and ResNet152 using there own pipeline of randomly generated negative examples from the training batch. Parameters set as batch size 64, learning rate starting with 0.001 and decay 0.95 after each 1000 steps. ResNet50 achieved best performance, outperforming the two-stream NN by ~16%, and concludes that by detecting the resolution inconsistency in face wrapping, they have developed a robust model to detect synthesized fake videos. 
+
+- Guera et al. **[Deepfake Video Detection Using Recurrent Neural Networks](https://engineering.purdue.edu/~dgueraco/content/deepfake.pdf)**:
+This paper utilizes a 2-stream NN focused on the following flaws of DeepFake generation. 
+  1. Different lightning conditions, different codecs makes it difficult for autoencoders to produce realistic faces under all conditions, leading to frame level scene inconsistency of the face with the scene.
+  2. Encoder is not aware of the skin or other scene information, making the faked video common to have boundary effects due to a seamed fusion between the new face and the rest of the frame.
+  3. Since the autoencoder usually performs the replacement frame by frame, the lack of temporal awareness is a source of multiple anomalies. Inconsistent illuminants between scene leads to flickering phenomenon in the face region common to the majority of fake videos. (Inconsistency throughout continuous frames)
+  <img src= "https://github.com/chorongi/Recitation10/blob/master/literature_img1.png">
+  Model uses...
+  <br>
+    1. ImageNet pre-trained InceptionV3 with a fully-connected layer for the CNN which outputs a 2048-dimensional feature vector.
+   </br>
+    2. 2048 wide LSTM with 0.5 chance dropout - 512 fully-connected layer with 0.5 chance dropout - softmax layer
+
 
 Dialogue Response:
 
